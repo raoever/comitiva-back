@@ -23,6 +23,5 @@ mongoose.connect(process.env.DB_CONNECTION,
     () => console.log(`DB Conectado na porta ${PORT}`));
 
 // () => console.log(`DB Conectado na porta ${PORT}`
-
 app.listen(PORT);
 
