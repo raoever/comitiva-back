@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
-const PaiSchema = mongoose.Schema({
-    nomePai: String,
-    nascimentoPai: Date,
-    ocupacaoPai: String,
-    contatoPai: String
+onst PaiSchema = mongoose.Schema({
+    paiNome: String,
+    paiNascimento: Date,
+    paiTurma: String,
+    paiOcupacao: String,
+    paiContato: String
 });
 
 module.exports = mongoose.model('Pai', PaiSchema);
