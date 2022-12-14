@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
 const DependenteSchema = mongoose.Schema({
-    nome: String,
-    parentesco: String,
-    nascimento: Date,
+    dependenteNome: String,
+    dependenteNascimento: Date,
+    dependenteParentesco: String,
+    dependenteTurma: String,
+    dependenteContato: String,
     estuda: Booleanm,
     escolaridade: String,
     tamanhoPe: String,
