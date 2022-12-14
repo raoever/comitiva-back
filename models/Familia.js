@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const FamiliaSchema = mongoose.Schema({
     endereco: String,
-    outro: String,
     pai: {
         paiNome: String,
         paiNascimento: Date,
