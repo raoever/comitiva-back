@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
 const MaeSchema = mongoose.Schema({
-    nome: String,
-    nascimento: Date,
-    ocupacao: String,
-    contato: String
+    maeNome: String,
+    maeNascimento: Date,
+    maeTurma: String,
+    maeOcupacao: String,
+    maeContato: String
 });
 
 module.exports = mongoose.model('Mae', MaeSchema);
