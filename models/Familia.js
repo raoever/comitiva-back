@@ -2,20 +2,17 @@ const mongoose = require('mongoose');
 
 const FamiliaSchema = mongoose.Schema({
     endereco: String,
-    pai: {
-        paiNome: String,
-        paiNascimento: Date,
-        paiTurma: String,
-        paiOcupacao: String,
-        paiContato: String
-    },
-    mae: {
-        maeNome: String,
-        maeNascimento: Date,
-        maeTurma: String,
-        maeOcupacao: String,
-        maeContato: String
-    },
+    paiNome: String,
+    paiNascimento: Date,
+    paiTurma: String,
+    paiOcupacao: String,
+    paiContato: String,
+    maeNome: String,
+    maeNascimento: Date,
+    maeTurma: String,
+    maeOcupacao: String,
+    maeContato: String,
+
     dependentes: [{
         nomeDependente: String,
         parentesco: String,
