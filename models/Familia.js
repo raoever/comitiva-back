@@ -12,7 +12,6 @@ const FamiliaSchema = mongoose.Schema({
     maeTurma: String,
     maeOcupacao: String,
     maeContato: String,
-
     dependentes: [{
         nomeDependente: String,
         parentesco: String,
