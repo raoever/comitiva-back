@@ -69,8 +69,16 @@ router.put('/familia/:id', async (req, res) => {
 router.post('/familia', (req, res) => {
     const familia = new Familia({
         endereco: req.body.endereco,
-        pai: req.body.pai,
-        mae: req.body.mae,
+        paiNome: req.body.paiNome,
+        paiNascimento: req.body.paiNascimento,
+        paiTurma: req.body.paiTurma,
+        paiOcupacao: req.body.paiOcupacao,
+        paiContato: req.body.paiContato,
+        maeNome: req.body.maeNome,
+        maeNascimento: req.body.maeNascimento,
+        maeTurma: req.body.maeTurma,
+        maeOcupacao: req.body.maeOcupacao,
+        maeContato: req.body.maeContato,
         dependentes: req.body.dependentes
     });
 
