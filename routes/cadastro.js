@@ -19,6 +19,7 @@ router.get('/familia/:id', async (req, res) => {
             if (!familia) {
                 return res.status(404).send();
             }
+            console.log(familia);
             res.send(familia);
         })
         .catch(error => {
